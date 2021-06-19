@@ -23,3 +23,14 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: lowlighter/metrics@master
+        with:
+          filename: metrics.plugin.reactions.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_reactions: yes
+          plugin_reactions_limit: 100
+          plugin_reactions_details: percentage
+          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
+          output_action: pull-request
+          delay: 120
