@@ -51,4 +51,6 @@ jobs:
           plugin_reactions_days: 60
           plugin_reactions_details: count, percentage
           plugin_reactions_ignored: bot
+          plugin_followup: yes
+          plugin_followup_sections: user
 
