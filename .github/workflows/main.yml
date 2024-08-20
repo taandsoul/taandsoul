@@ -47,7 +47,7 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           plugin_reactions: yes
           plugin_reactions_limit: 200
-          plugin_reactions_limit_issues: 100
+          plugin_reactions_limit_issues: 0
           plugin_reactions_days: 60
           plugin_reactions_details: count, percentage
           plugin_reactions_ignored: bot
